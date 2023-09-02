@@ -3,7 +3,7 @@ My Notes (Notes)
 
 ## Information
 
-- Title:  `Backend-Notes CRUD`
+- Title:  `My Notes CRUD`
 - Authors:  `Daniel Camilo Bustos Rodriguez`
 - Email:  `daniel.camilo.96@hotmail.com`
 - Celular:  `+573166238632`

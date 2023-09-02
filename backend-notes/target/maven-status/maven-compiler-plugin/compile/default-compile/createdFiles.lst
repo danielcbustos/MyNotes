@@ -1,0 +1,11 @@
+com\ensolvers\backendnotes\repositories\contracts\ICategoryRepository.class
+com\ensolvers\backendnotes\services\contracts\ICategoryService.class
+com\ensolvers\backendnotes\entities\Category.class
+com\ensolvers\backendnotes\entities\Note.class
+com\ensolvers\backendnotes\services\implementations\NoteService.class
+com\ensolvers\backendnotes\controllers\NoteController.class
+com\ensolvers\backendnotes\repositories\contracts\INoteRespository.class
+com\ensolvers\backendnotes\services\implementations\CategoryService.class
+com\ensolvers\backendnotes\BackendNotesApplication.class
+com\ensolvers\backendnotes\controllers\CategoryController.class
+com\ensolvers\backendnotes\services\contracts\INoteService.class

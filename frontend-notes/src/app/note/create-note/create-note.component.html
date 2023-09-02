@@ -1,0 +1,123 @@
+<h3>Create Note</h3>
+<div class="mt-4 m-4 animate__animated animate__fadeInLeft">
+  <form
+    [formGroup]="noteForm"
+    (ngSubmit)="!noteForm.invalid && createNote(noteForm.value)"
+  >
+    <!--Name-->
+    <div class="form-group mx-sm-3 mb-2">
+      <label for="nombre">Nombre</label>
+      <input
+        novalidate
+        id="title"
+        class="form-control"
+        formControlName="title"
+        placeholder="Note's title"
+      />
+      <div
+        class="alert alert-danger alert-dismissible fade show"
+        *ngIf="
+          noteForm.get('title')!.hasError('required') &&
+          noteForm.get('title')!.touched
+        "
+      >
+        Title required
+      </div>
+      <div
+        class="alert alert-danger alert-dismissible fade show"
+        *ngIf="noteForm.get('title')!.hasError('minlength')"
+      >
+        The name is too short, it should have at least two characters.
+      </div>
+    </div>
+
+    <!--Content-->
+    <div class="form-group mx-sm-3 mb-2">
+      <label for="content">Content</label>
+      <input
+        novalidate
+        id="content"
+        class="form-control"
+        formControlName="content"
+        placeholder="Note's content"
+      />
+      <div
+        class="alert alert-danger alert-dismissible fade show"
+        *ngIf="
+          noteForm.get('content')!.hasError('required') &&
+          noteForm.get('content')!.touched
+        "
+      >
+        Content required
+      </div>
+      <div
+        class="alert alert-danger alert-dismissible fade show"
+        *ngIf="noteForm.get('content')!.hasError('maxlength')"
+      >
+        The description is too long, it should have maximum 100 characters
+      </div>
+    </div>
+
+    <!-- Categories -->
+    <label class="ml-3 mt-3">Categories</label>
+
+    <div class="card m-3">
+      <div class="card-body">
+        <div class="row">
+          <div
+            class="col-6"
+            *ngFor="let category of categoriesList; let i = index"
+          >
+            <div class="form-group">
+              <div class="form-check form-switch">
+                <label class="form-check-label" for="flexSwitchCheckChecked">{{
+                  category.name
+                }}</label>
+                <input
+                  class="form-check-input"
+                  for="flexSwitchCheckChecked"
+                  type="checkbox"
+                  [value]="category.id"
+                  (change)="onCheckboxChange($event)"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer"></div>
+    </div>
+    <div class="col-4 ms-3">
+      <div class="input-group mb-3">
+        <button
+          class="btn btn-outline-secondary"
+          type="button"
+          (click)="createCategory()"
+        >
+          Add
+        </button>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="New Category"
+          [(ngModel)]="newCategoryName"
+          [ngModelOptions]="{ standalone: true }"
+        />
+      </div>
+    </div>
+
+    <div class="form-group m-3">
+      <button
+        type="submit"
+        class="btn btn-primary"
+        [disabled]="!noteForm.valid"
+      >
+        Create
+      </button>
+      &nbsp;
+      <button type="button" class="btn btn-danger ml-3" (click)="cancelNote()">
+        Cancel
+      </button>
+    </div>
+  </form>
+</div>

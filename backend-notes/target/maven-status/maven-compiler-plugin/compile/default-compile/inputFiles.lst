@@ -1,0 +1,11 @@
+C:\Users\Acer1\Desktop\examen ensolvers\examenensolvers\backend-notes\src\main\java\com\ensolvers\backendnotes\services\implementations\NoteService.java
+C:\Users\Acer1\Desktop\examen ensolvers\examenensolvers\backend-notes\src\main\java\com\ensolvers\backendnotes\controllers\NoteController.java
+C:\Users\Acer1\Desktop\examen ensolvers\examenensolvers\backend-notes\src\main\java\com\ensolvers\backendnotes\BackendNotesApplication.java
+C:\Users\Acer1\Desktop\examen ensolvers\examenensolvers\backend-notes\src\main\java\com\ensolvers\backendnotes\entities\Category.java
+C:\Users\Acer1\Desktop\examen ensolvers\examenensolvers\backend-notes\src\main\java\com\ensolvers\backendnotes\controllers\CategoryController.java
+C:\Users\Acer1\Desktop\examen ensolvers\examenensolvers\backend-notes\src\main\java\com\ensolvers\backendnotes\services\implementations\CategoryService.java
+C:\Users\Acer1\Desktop\examen ensolvers\examenensolvers\backend-notes\src\main\java\com\ensolvers\backendnotes\entities\Note.java
+C:\Users\Acer1\Desktop\examen ensolvers\examenensolvers\backend-notes\src\main\java\com\ensolvers\backendnotes\services\contracts\INoteService.java
+C:\Users\Acer1\Desktop\examen ensolvers\examenensolvers\backend-notes\src\main\java\com\ensolvers\backendnotes\services\contracts\ICategoryService.java
+C:\Users\Acer1\Desktop\examen ensolvers\examenensolvers\backend-notes\src\main\java\com\ensolvers\backendnotes\repositories\contracts\INoteRespository.java
+C:\Users\Acer1\Desktop\examen ensolvers\examenensolvers\backend-notes\src\main\java\com\ensolvers\backendnotes\repositories\contracts\ICategoryRepository.java
